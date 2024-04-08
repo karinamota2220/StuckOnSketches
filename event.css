@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Cedarville Cursive', cursive; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    /* background: url(./WangXian_pics/Mo.Dao.Zu.Shi.full.3523102.jpg) no-repeat; */
+    background: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: .1rem solid rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px lightyellow);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    filter: drop-shadow(0 0 5px lightyellow);
+    text-decoration: none;
+    font-size: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: deeppink;
+}
+
+.main {
+    min-height: 100vh;
+    background: url(./megsPhotos/flower.png);
+    background-size: 300px;
+    background-position: center;
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: black;
+    filter: drop-shadow(0 0 5px deeppink);
+    display: none;
+}
+
+
+.events h2 {
+    margin-bottom: 5rem;
+}
+
+.events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.events-container .events-box {
+    flex: 1 1 30rem;
+    background: transparent;
+    border: .2rem solid rgba(255, 255, 255, .5);
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    padding: 6rem 1rem 2rem;
+    text-align: left;
+    /* border: .2rem solid var(--bg-color); */
+    transition: .5s ease;
+}
+
+/* .events-container .events-box:hover {
+    border-color: deeppink;
+    transform: scale(1.02);
+
+} */
+
+.events-box i {
+    font-size: 7rem;
+    color: deeppink;
+}
+
+.events-box h3 {
+    font-size: 2.6rem;
+}
+
+.events-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+/* for notable past events */
+
+#myInput {
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid rgb(243, 171, 220); /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    text-decoration: none;
+
+  }
+  
+  #myTable {
+    text-decoration: none;
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid rgb(243, 171, 220); /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+  }
+  
+  #myTable th, #myTable td {
+    text-decoration: none;
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+  
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid rgb(243, 171, 220);
+    text-decoration: none;
+
+  }
+  
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    padding: 1rem 1rem 1rem;
+    background-color: lightpink;
+    text-decoration: none;
+
+  }
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: transparent;
+    border: .1rem solid rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: lightpink;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem deeppink;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: white;
+}
+
+
+/* breakpoint */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}

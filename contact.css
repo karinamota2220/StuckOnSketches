@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    /* font-family: 'Cedarville Cursive', cursive; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    /* background: url(./WangXian_pics/Mo.Dao.Zu.Shi.full.3523102.jpg) no-repeat; */
+    background: black;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: .1rem solid rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px lightyellow);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    filter: drop-shadow(0 0 5px lightyellow);
+    text-decoration: none;
+    font-size: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: deeppink;
+}
+
+.main {
+    min-height: 100vh;
+    background: url(./megsPhotos/flower.png);
+    background-size: 300px;
+    background-position: center;
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+span {
+    color: deeppink;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem deeppink;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+background: lightyellow;
+}
+
+
+/* Contact section */
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: pink;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+    
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: transparent;
+    border: .1rem solid rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: lightpink;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem deeppink;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: white;
+}
+
+
+/* breakpoint */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+    
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}

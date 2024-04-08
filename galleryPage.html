@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="gallery.css">
+
+        <main class="main">
+            <header class="header">
+                <a href="#" class="logo">Stuck on Sketches.</a>
+
+                <i class='bx bx-menu' id="menu-icon"></i>
+
+                <nav class="navbar">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="event.html">Events</a>
+                    <a href="galleryPage.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+
+                </nav>
+            </header>
+    </head>
+    <body>
+
+        <section class="last-kawaii" id="last-kawaii">
+            
+            <!-- cat-cake-slides -->
+            <div class="last-kawaii-container">
+                <div class="last-kawaii-box" id="">
+                    <div class="last-kawaii-layer">
+                        <div class="last-cute-container">
+                            <!-- Full-width images with number text -->
+                            <div class="lastSlides" data-slide="cat-cake-slide">
+                                <div class="numberlasttext">1 / 6</div>
+                                <img src="megsPhotos/newCatAndCake.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="cat-cake-slide">
+                                <div class="numberlasttext">2 / 6</div>
+                                <img src="megsPhotos/redPandawithgreensoda.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="cat-cake-slide">
+                                <div class="numberlasttext">3 / 6</div>
+                                <img src="megsPhotos/NewcatInCup.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="cat-cake-slide">
+                                <div class="numberlasttext">4 / 6</div>
+                                <img src="megsPhotos/newRedPandaInDounut.png" style="width:100%">
+                            </div>
+                            <div class="lastSlides" data-slide="cat-cake-slide">
+                                <div class="numberlasttext">5 / 6</div>
+                                <img src="megsPhotos/kittyCooking.png" style="width:100%">
+                            </div>
+                            <div class="lastSlides" data-slide="cat-cake-slide">
+                                <div class="numberlasttext">6 / 6</div>
+                                <img src="megsPhotos/kittyCoffee.png" style="width:100%">
+                            </div>
+
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="l-prev" onclick="thirdChangeSlide(-1)">&#10094;</a>
+                            <a class="l-next" onclick="thirdChangeSlide(1)">&#10095;</a>
+                        
+                            <!-- Image text -->
+                            <div class="last-caption-container">
+                                <p id="last-caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail images -->
+                            <div class="l-row">
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="megsPhotos/newCatAndCake.png" style="width:100%" onclick="thirdControlSelectSlide(1)" alt="Pup Noodle & More!">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="megsPhotos/redPandawithgreensoda.png" style="width:100%" onclick="thirdControlSelectSlide(2)" alt="Cinnamoroll">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="megsPhotos/NewcatInCup.png" style="width:100%" onclick="thirdControlSelectSlide(3)" alt="Pochacco">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="megsPhotos/newRedPandaInDounut.png" style="width:100%" onclick="thirdControlSelectSlide(4)" alt="Chococat">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="megsPhotos/kittyCooking.png" style="width:100%" onclick="thirdControlSelectSlide(5)" alt="Chococat">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="cat-cake-thumbnail" src="megsPhotos/kittyCoffee.png" style="width:100%" onclick="thirdControlSelectSlide(6)" alt="Lucky Cat">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <!-- <img src="megsPhotos/yellowfood.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+
+            <!--Multi stickers  -->
+            <div class="last-kawaii-container">
+                <div class="last-kawaii-box" id="">
+                    <div class="last-kawaii-layer">
+                        <div class="last-cute-container">
+                            <!-- Full-width images with number text -->
+                            <div class="lastSlides" data-slide="test-slide">
+                                <div class="numberlasttext">1 / 6</div>
+                                <img src="megsPhotos/pokmonStickers.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="test-slide">
+                                <div class="numberlasttext">2 / 6</div>
+                                <img src="megsPhotos/dounts.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="test-slide">
+                                <div class="numberlasttext">3 / 6</div>
+                                <img src="megsPhotos/hotdog.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="test-slide">
+                                <div class="numberlasttext">4 / 6</div>
+                                <img src="megsPhotos/kpopfood.png" style="width:100%">
+                            </div>
+                            <div class="lastSlides" data-slide="test-slide">
+                                <div class="numberlasttext">5 / 6</div>
+                                <img src="megsPhotos/kpop.png" style="width:100%">
+                            </div>
+                            <div class="lastSlides" data-slide="test-slide">
+                                <div class="numberlasttext">6 / 6</div>
+                                <img src="megsPhotos/jjk.png" style="width:100%">
+                            </div>
+
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="l-prev" onclick="testChangeSlide(-1)">&#10094;</a>
+                            <a class="l-next" onclick="testChangeSlide(1)">&#10095;</a>
+                        
+                            <!-- Image text -->
+                            <div class="last-caption-container">
+                                <p id="test-caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail images -->
+                            <div class="l-row">
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="test-thumbnail" src="megsPhotos/pokmonStickers.png" style="width:100%" onclick="testControlSelectSlide(1)" alt="Pup Noodle & More!">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="test-thumbnail" src="megsPhotos/dounts.png" style="width:100%" onclick="testControlSelectSlide(2)" alt="Cinnamoroll">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="test-thumbnail" src="megsPhotos/hotdog.png" style="width:100%" onclick="testControlSelectSlide(3)" alt="Pochacco">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="test-thumbnail" src="megsPhotos/kpopfood.png" style="width:100%" onclick="testControlSelectSlide(4)" alt="Chococat">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="test-thumbnail" src="megsPhotos/kpop.png" style="width:100%" onclick="testControlSelectSlide(5)" alt="Chococat">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="test-thumbnail" src="megsPhotos/jjk.png" style="width:100%" onclick="testControlSelectSlide(6)" alt="Lucky Cat">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="last-kawaii-container">
+                <div class="last-kawaii-box" id="">
+                    <div class="last-kawaii-layer">
+                        <div class="last-cute-container">
+                            <!-- Full-width images with number text -->
+                            <div class="lastSlides" data-slide="kuromi-slide">
+                                <div class="numberlasttext">1 / 6</div>
+                                <img src="megsPhotos/purolefood.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="kuromi-slide">
+                                <div class="numberlasttext">2 / 6</div>
+                                <img src="megsPhotos/catfood.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="kuromi-slide">
+                                <div class="numberlasttext">3 / 6</div>
+                                <img src="megsPhotos/bluefood.png" style="width:100%">
+                            </div>
+                        
+                            <div class="lastSlides" data-slide="kuromi-slide">
+                                <div class="numberlasttext">4 / 6</div>
+                                <img src="megsPhotos/dogfood.png" style="width:100%">
+                            </div>
+                            <div class="lastSlides" data-slide="kuromi-slide">
+                                <div class="numberlasttext">5 / 6</div>
+                                <img src="megsPhotos/icecreamfood.png" style="width:100%">
+                            </div>
+                            <div class="lastSlides" data-slide="kuromi-slide">
+                                <div class="numberlasttext">6 / 6</div>
+                                <img src="megsPhotos/yellowfood.png" style="width:100%">
+                            </div>
+
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="l-prev" onclick="kuromiChangeSlide(-1)">&#10094;</a>
+                            <a class="l-next" onclick="kuromiChangeSlide(1)">&#10095;</a>
+                        
+                            <!-- Image text -->
+                            <div class="last-caption-container">
+                                <p id="kuromi-caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail images -->
+                            <div class="l-row">
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="kuromi-thumbnail" src="megsPhotos/purolefood.png" style="width:100%" onclick="kuromiControlSelectSlide(1)" alt="Pup Noodle & More!">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="kuromi-thumbnail" src="megsPhotos/catfood.png" style="width:100%" onclick="kuromiControlSelectSlide(2)" alt="Cinnamoroll">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="kuromi-thumbnail" src="megsPhotos/bluefood.png" style="width:100%" onclick="kuromiControlSelectSlide(3)" alt="Pochacco">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="kuromi-thumbnail" src="megsPhotos/dogfood.png" style="width:100%" onclick="kuromiControlSelectSlide(4)" alt="Chococat">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="kuromi-thumbnail" src="megsPhotos/icecreamfood.png" style="width:100%" onclick="kuromiControlSelectSlide(5)" alt="Chococat">
+                                </div>
+                                <div class="l-column">
+                                    <img class="thumbnail-style cursor2" data-slide-thumbnail="kuromi-thumbnail" src="megsPhotos/yellowfood.png" style="width:100%" onclick="kuromiControlSelectSlide(6)" alt="Lucky Cat">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p></p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#Gallery"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+    </body>
+    <script src="gallery.js"></script>
+</html>
