@@ -66,13 +66,24 @@ section {
     color: deeppink;
 }
 
-.main {
-    min-height: 100vh;
+body {
     background: url(./megsPhotos/flower.png);
     background-size: 300px;
     background-position: center;
     pointer-events: auto;
     transition: .3s ease;
+}
+
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: black;
+    filter: drop-shadow(0 0 5px white);
+    display: none;
 }
 
 span {
@@ -96,51 +107,61 @@ background: lightyellow;
 }
 
 
-/* Contact section */
+/* the Fun Facts section */
+.events h2 {
+    font-family: 'Playfair Display';
+    margin-bottom: 5rem;
 
-.contact h2 {
-    margin-bottom: 3rem;
 }
 
-
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
+.events-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.events-container .events-box {
+    flex: 1 1 30rem;
+    background: transparent;
+    border: .2rem solid rgba(255, 255, 255, .5);
+    border-radius: 2rem;
+    backdrop-filter: blur(20px);
+    padding: 3rem 2rem 4rem;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.events-container .events-box:hover {
+    border-color: deeppink;
+    transform: scale(1.02);
+}
+
+.events-box i {
+    font-size: 7rem;
+    color: deeppink;
+}
+
+.events-box h3 {
+    font-size: 2.6rem;
+}
+
+.events-box p {
+    font-family: 'Lato';
+    font-size: 1.8rem;
+    margin: 1rem 0 3rem;
+}
+
+.events-box .Eeveelution {
+    font-size: 1.8rem;
+}
+
+.events-box .kai {
+    font-size: 1.8rem;
 }
 
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: black;
-    background: pink;
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
-    
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
 
 .footer {
     display: flex;
@@ -175,6 +196,46 @@ background: lightyellow;
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: white;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .1rem solid hotpink;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: deeppink;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+	background: lightyellow;
+	box-shadow: 0 0 1rem deeppink;
+}
+
+.btn {
+    font-family: 'Playfair Display';
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    background: transparent;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem deeppink;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+/* background: lightyellow; */
+	backdrop-filter: blur(50px);
+	box-shadow: 0 0 3rem deeppink;
+
 }
 
 

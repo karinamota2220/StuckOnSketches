@@ -1,91 +1,89 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    /* font-family: 'Cedarville Cursive', cursive; */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  /* font-family: 'Cedarville Cursive', cursive; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
 body {
-    min-height: 100vh;
-    /* background: url(./WangXian_pics/Mo.Dao.Zu.Shi.full.3523102.jpg) no-repeat; */
-    background: black;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    overflow-y: auto;
+  min-height: 100vh;
+  /* background: url(./WangXian_pics/Mo.Dao.Zu.Shi.full.3523102.jpg) no-repeat; */
+  background: black;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
 
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    border: .1rem solid rgba(255, 255, 255, .5);
-    border-radius: 1rem;
-    backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border: .1rem solid rgba(255, 255, 255, .5);
+  border-radius: 1rem;
+  backdrop-filter: blur(20px);
 }
 
-
-
 .logo {
-    font-size: 32px;
-    color: black;
-    text-decoration: none;
-    font-weight: 700;
-    filter: drop-shadow(0 0 5px lightyellow);
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  filter: drop-shadow(0 0 5px lightyellow);
 }
 
 .navbar a {
-    font-size: 18px;
-    color: black;
-    filter: drop-shadow(0 0 5px lightyellow);
-    text-decoration: none;
-    font-size: 500;
-    margin-left: 35px;
-    transition: .3s;
+  font-size: 18px;
+  color: black;
+  filter: drop-shadow(0 0 5px lightyellow);
+  text-decoration: none;
+  font-size: 500;
+  margin-left: 35px;
+  transition: .3s;
 }
 
-.navbar a:hover {
-    color: deeppink;
+.navbar a:hover,
+.navbar a.active {
+  color: deeppink;
 }
 
-.main {
-    min-height: 100vh;
-    background: url(./megsPhotos/flower.png);
-    background-size: 300px;
-    background-position: center;
-    pointer-events: auto;
-    transition: .3s ease;
+body {
+  background: url(./megsPhotos/flower.png);
+  background-size: 300px;
+  background-position: center;
+  pointer-events: auto;
+  transition: .3s ease;
 }
 
 .main.active {
-    filter: blur(15px);
-    pointer-events: none;
+  filter: blur(15px);
+  pointer-events: none;
 }
 
 #menu-icon {
-    font-size: 3.6rem;
-    color: black;
-    filter: drop-shadow(0 0 5px deeppink);
-    display: none;
+  font-size: 3.6rem;
+  color: black;
+  filter: drop-shadow(0 0 5px white);
+  display: none;
 }
 
 /* gallery section */
@@ -100,9 +98,10 @@ section {
 
   /* Position the image container (needed to position the left and right arrows) */
  .last-cute-container {
-    position: relative;
-    width: 500px;
-    margin: inherit;
+  flex-wrap: wrap;
+  position: relative;
+  width: 500px;
+  margin: inherit;
   }
   
   /* Hide the images by default */
@@ -212,6 +211,7 @@ section {
   
 
   .last-kawaii-container .last-kawaii-box {
+    flex-wrap: wrap;
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 2rem deeppink;
@@ -295,96 +295,97 @@ section {
   
 /* Position the image container (needed to position the left and right arrows) */
 .gridContainer {
-    position: relative;
-    width: 500px;
-    margin: inherit;
+  flex-wrap: wrap;
+  position: relative;
+  width: 500px;
+  margin: inherit;
   }
   
   /* Hide the images by default */
-  .gridSlides {
-    display: none;
-    width: 500px;
-    margin: inherit;
-    
-  }
+.gridSlides {
+  display: none;
+  width: 500px;
+  margin: inherit;
+  
+}
   
   /* Add a pointer when hovering over the thumbnail images */
-  .cursor3 {
-    cursor: pointer;
-    width: 500px;
-    margin: inherit;
-  }
+.cursor3 {
+  cursor: pointer;
+  width: 500px;
+  margin: inherit;
+}
   
   /* Next & previous buttons */
-  .gridPrev,
-  .gridNext {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 14px;
-    margin-top: -40px;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
+.gridPrev,
+.gridNext {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 14px;
+  margin-top: -40px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
   
   /* Position the "next button" to the right */
-  .gridNext {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.gridNext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 
-    /* Position the "prev button" to the left */
+  /* Position the "prev button" to the left */
 
-  .gridPrev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.gridPrev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gridPrev:hover,
+.gridNext:hover {
+  background-color: deeppink;
+}
   
-  /* On hover, add a black background color with a little bit see-through */
-  .gridPrev:hover,
-  .gridNext:hover {
-    background-color: deeppink;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numberGrid {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* Container for image text */
-  .gridCaptionContainer {
-    text-align: center;
-    background-color: deeppink;
-    padding: 1px 16px;
-    color: white;
-  }
-  
-  .kpop1-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .kpop1-column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .kpop1-demo {
-    opacity: 0.6;
-  }
+/* Number text (1/3 etc) */
+.numberGrid {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.gridCaptionContainer {
+  text-align: center;
+  background-color: deeppink;
+  padding: 1px 16px;
+  color: white;
+}
+
+.kpop1-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.kpop1-column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.kpop1-demo {
+  opacity: 0.6;
+}
   
   .active,
   .kpop1-demo:hover {
@@ -392,32 +393,32 @@ section {
   }
 
 
-  .gridCaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+.gridCaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  }
   
 
-  .gridCaption .gridMain-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 2rem deeppink;
-    overflow: hidden;
-    display: flex;
-    width: 500px;
-    /* margin: inherit; */
-    text-align: center;
-    left: 40%;
-    /* transform: translate(-10%, -281%); */
-    
-  }
+.gridCaption .gridMain-box {
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem deeppink;
+  overflow: hidden;
+  display: flex;
+  width: 500px;
+  /* margin: inherit; */
+  text-align: center;
+  left: 40%;
+  /* transform: translate(-10%, -281%); */
+  
+}
 
-  .gridSlides img {
-    width: 40%;
-  }
+.gridSlides img {
+  width: 40%;
+}
 
 
 /* end of profile grid */
@@ -465,85 +466,95 @@ section {
     color: white;
 }
 
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: .1rem solid hotpink;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: deeppink;
+  margin: 3rem 1.5rem 3rem 0;
+  transition: .5s ease;
+}
+
+.social-media a:hover {
+background: lightyellow;
+box-shadow: 0 0 1rem deeppink;
+}
+
+.btn {
+  font-family: 'Playfair Display';
+  display: inline-block;
+  padding: 1rem 1.3rem;
+  background: transparent;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem deeppink;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  transition: .5s ease;
+}
+
+.btn:hover {
+/* background: lightyellow; */
+backdrop-filter: blur(50px);
+box-shadow: 0 0 3rem deeppink;
+
+}
+
 
 
 /* breakpoint */
 
 @media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
+  html {
+      font-size: 55%;
+  }
 }
 
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
+  .header {
+      padding: 2rem 3%;
+  }
+  
+  section {
+      padding: 10rem 3% 2rem;
+  }
 
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .services {
-        padding-bottom: 7rem;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
+  .footer {
+      padding: 2rem 3%;
+  }
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: transparent;
-        border-top: .1rem solid rgba(255, 255, 255, .5);
-        box-shadow: 0 .5rem 1rem rgba(255, 255, 255, .5);
-        backdrop-filter: blur(20px);
-        display: none;
+  #menu-icon {
+      display: block;
+  }
+  .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: pink;
+      border-top: .1rem solid rgb(255, 255, 255);
+      box-shadow: 0 .5rem 1rem rgb(255, 255, 255);
+      backdrop-filter: blur(20px);
+      display: none;
 
-    }
+  }
 
-    .navbar.active {
-        display: block;
-    }
+  .navbar.active {
+      display: block;
+  }
 
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    .Gallery {
-        flex-direction: column;
-    }
-
-    .gallery-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .gallery-content h1 {
-        font-size: 5rem;
-    }
-
-    /* .about-img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-
-    .sticky {
-        flex-direction: column-reverse;
-    }
-
-    .sticky img {
-        width: 70vw;
-        margin-top: 4rem;
-    } */
+  .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 3rem 0;
+  }
 }

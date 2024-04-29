@@ -66,8 +66,7 @@ section {
     color: deeppink;
 }
 
-.main {
-    min-height: 100vh;
+body {
     background: url(./megsPhotos/flower.png);
     background-size: 300px;
     background-position: center;
@@ -83,7 +82,7 @@ section {
 #menu-icon {
     font-size: 3.6rem;
     color: black;
-    filter: drop-shadow(0 0 5px deeppink);
+    filter: drop-shadow(0 0 5px white);
     display: none;
 }
 
@@ -140,11 +139,13 @@ section {
     width: 100%; /* Full-width */
     font-size: 16px; /* Increase font-size */
     padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid rgb(243, 171, 220); /* Add a grey border */
+    border: 1px solid rgb(218, 39, 188); /* Add a grey border */
     margin-bottom: 12px; /* Add some space below the input */
     text-decoration: none;
 
   }
+
+
   
   #myTable {
     text-decoration: none;
@@ -212,6 +213,46 @@ section {
     color: white;
 }
 
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .1rem solid hotpink;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: deeppink;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+	background: lightyellow;
+	box-shadow: 0 0 1rem deeppink;
+}
+
+.btn {
+    font-family: 'Playfair Display';
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    background: transparent;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem deeppink;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+/* background: lightyellow; */
+	backdrop-filter: blur(50px);
+	box-shadow: 0 0 3rem deeppink;
+
+}
+
 
 /* breakpoint */
 
@@ -232,5 +273,34 @@ section {
 
     .footer {
         padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: pink;
+        border-top: .1rem solid rgb(255, 255, 255);
+        box-shadow: 0 .5rem 1rem rgb(255, 255, 255);
+        backdrop-filter: blur(20px);
+        display: none;
+
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
 }
