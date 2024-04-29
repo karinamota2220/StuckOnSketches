@@ -260,3 +260,32 @@ background: lightyellow;
         padding: 2rem 3%;
     }
 }
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: pink;
+        border-top: .1rem solid rgb(255, 255, 255);
+        box-shadow: 0 .5rem 1rem rgb(255, 255, 255);
+        backdrop-filter: blur(20px);
+        display: none;
+
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}

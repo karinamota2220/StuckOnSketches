@@ -1,3 +1,14 @@
+  // ============== Toggle icon navbar ===================
+  let menuIcon = document.querySelector('#menu-icon');
+  let navbar = document.querySelector('.navbar');
+  
+  menuIcon.onclick = () => {
+      menuIcon.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+  
+  }
+
+
 
 // ============== Home section slide show ===================
 let slideIndex = 1;
@@ -28,19 +39,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-  // ============== Toggle icon navbar ===================
-  let menuIcon = document.querySelector('#menu-icon');
-  let navbar = document.querySelector('.navbar');
-  
-  menuIcon.onclick = () => {
-      menuIcon.classList.toggle('bx-x');
-      navbar.classList.toggle('active');
-  
-  }
-
-
-
 
 
 // ============== Sticky navbar ===================
